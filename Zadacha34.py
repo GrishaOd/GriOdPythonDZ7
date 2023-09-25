@@ -6,6 +6,7 @@
 # Стихотворение  Винни-Пух вбивает в программу с клавиатуры.
 # В ответе напишите “Парам пам-пам”, если с ритмом все в порядке и “Пам парам”, если с ритмом все не в порядке
 
+
 glasnye = ['а', 'ё', 'у', 'е', 'ы', 'а', 'о', 'э', 'я', 'и', 'ю']
 stih = (input('Введите стих: '))
 stih = list(stih.split())
@@ -17,9 +18,7 @@ for i, x in enumerate(stih):
             rythmcount += 1
     rythm.append(rythmcount)
 print(rythm)
-
 res = set(rythm)
-print(res)
 if len(res) == 1:
     print('Парам пам-пам')
 else:
